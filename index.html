@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual dos Convidados</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #2e2e2e;
+      line-height: 1.6;
+    }
+
+    /* ===== HEADER COM FOTO ===== */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      background-image: url("SUA-FOTO-AQUI.jpg"); /* 👈 TROQUE AQUI */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    .hero h1 {
+      position: relative;
+      color: #ffffff;
+      font-size: 2rem;
+      text-align: center;
+      padding: 0 20px;
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 10px;
+    }
+
+    /* ===== CONTAINER ===== */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* ===== BLOCOS ===== */
+    .box {
+      margin: 20px 0;
+      padding: 15px;
+      border-left: 5px solid #3b5323;
+      border-radius: 8px;
+    }
+
+    .bg-light { background: #ffffff; }
+    .bg-soft  { background: #f9f9f9; }
+
+    h3 {
+      color: #3b5323;
+      margin-top: 0;
+    }
+
+    a.btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #3b5323;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0;
+      font-style: italic;
+      color: #3b5323;
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 600px) {
+      .hero {
+        height: 220px;
+      }
+
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER COM FOTO -->
+  <section class="hero">
+    <h1>🌿 Manual dos Convidados</h1>
+  </section>
+
+  <!-- CONTEÚDO -->
+  <main class="container">
+
+    <div class="box bg-soft">
+      <h3>📱 Presença</h3>
+      <p>Confirmem vossa presença</p>
+    </div>
+
+    <div class="box bg-light">
+      <h3>👰‍♀️ Sugestão de trajes</h3>
+      <p>Branco é a cor da noiva. Não ir com cores semelhantes (off-white, bege ou amarelo claro)</p>
+    </div>
+
+    <div class="box bg-soft">
+      <h3>👔 Sugestão de trajes</h3>
+      <p>Sugerimos traje social. No entanto, pedimos que não venha com traje nas cores verde oliva, verde claro, azul royal. Venha elegante e confortável.</p>
+    </div>
+
+    <div class="box bg-light">
+      <h3>🚫 Bebidas Alcoólicas</h3>
+      <p>Pedimos que não levem e/ou consumam bebidas alcoólicas e destilados durante a cerimônia e festa.</p>
+    </div>
+
+    <div class="box bg-soft">
+      <h3>👥 Convidados</h3>
+      <p>Convidado não convida</p>
+    </div>
+
+    <div class="box bg-light">
+      <h3>📸 Fotos dos fotógrafos</h3>
+      <p>Por gentileza, pedimos todo cuidado para não atrapalhar os fotógrafos</p>
+    </div>
+
+    <div class="box bg-soft">
+      <h3>💍 Cerimônia</h3>
+      <p>Por favor, participem da cerimônia e da festa.</p>
+    </div>
+
+    <div class="box bg-light">
+      <h3>🪴 Decoração</h3>
+      <p>Por favor, não levem a decoração das mesas ou do salão para casa.</p>
+    </div>
+
+    <div class="box bg-soft">
+      <h3>⏰ Horário</h3>
+      <p>Pedimos que chegue com <b>30 minutos de antecedência</b>. Assim todos podem se acomodar com calma e aproveitamos cada instante juntos.</p>
+    </div>
+
+    <div class="box bg-light">
+      <h3>🧁 Mesa dos doces</h3>
+      <p>Pedimos aguardem a liberação da mesa dos doces.</p>
+    </div>
+
+    <div class="box bg-soft">
+      <h3>✨ Aproveite</h3>
+      <p>Aproveita bastante!!</p>
+    </div>
+
+    <div class="box bg-light">
+      <h3>🤵👰‍♀️ Cumprimentos</h3>
+      <p>Você é muito especial para nós, pedimos que não saia para ir embora sem se despedir de nós ❤️</p>
+    </div>
+
+    <div class="box bg-soft">
+      <h3>📍 Local</h3>
+      <p>A cerimônia e recepção acontecerão em <b>R. da Candelária, 105</b>.</p>
+      <a class="btn" href="https://maps.app.goo.gl/yxxWh3DJHZLtRrobA?g_st=aw" target="_blank">🗺️ Ver no Google Maps</a>
+    </div>
+
+    <div class="box bg-light">
+      <h3>🎁 Presentes</h3>
+      <p>Você pode escolher na nossa lista online ou optar por presentes criativos. O mais importante é a sua presença!</p>
+    </div>
+
+    <div class="box bg-soft">
+      <h3>🚗 Estacionamento</h3>
+      <p>Haverá estacionamento disponível no local.</p>
+    </div>
+
+    <footer>
+      Estamos muito felizes por compartilhar esse momento com vocês.<br>
+      Obrigado pelo carinho e pela presença 🌿💍
+    </footer>
+
+  </main>
+
+</body>
+</html>
